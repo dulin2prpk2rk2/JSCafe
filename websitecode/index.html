@@ -1,0 +1,412 @@
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="codefunction.js"></script>
+    <meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="images/coffeeboxy.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Menu
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Bookings
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Gift Cards
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+
+<section id="hero-1856">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Welcome to JavaScript Cafe</span>
+            <h1 class="cs-title">Come Grab A Coffee!</h1>
+            <p class="cs-text">
+                Vibrant Atmosphere, Freshly Made Rich Coffee, This is the cafe you’ve been looking for.
+            </p>
+            <a href="" class="cs-button-solid">See Menu</a>
+            <img class="cs-content-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-graphic.svg" alt="graphic" height="1075" width="1400" loading="lazy" decoding="async">
+        </div>
+    </div>
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset=images/hero.jpg>
+        <source media="(min-width: 601px)" srcset=images/hero.jpg>
+        <img loading="lazy" decoding="async" src=images/hero.jpg alt="field" width="1920" height="1200" aria-hidden="true">
+    </picture>
+
+</section>
+
+<section id="why-choose-1821">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">About us</h1>
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1567880905822-56f8e06fe630?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1567880905822-56f8e06fe630?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1567880905822-56f8e06fe630?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="body builder" width="562" height="568">
+            </picture>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-house.svg" alt="icon" width="32" height="32">
+                <div class="cs-item-wrapper">
+                    <h3 class="cs-h3">
+                        Family Owned Business
+                    </h3>
+                    <p class="cs-item-text">
+                        First established by my great grandfather Sir Edward Jeffrey IV in 1901. The cafe went through many changes becoming what is known as JavaScript Cafe Today
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-layer.svg" alt="icon" width="32" height="32">
+                <div class="cs-item-wrapper">
+                    <h3 class="cs-h3">
+                        Latest machinery in coffee making process
+                    </h3>
+                    <p class="cs-item-text">
+                        We know you love your Coffee. To be able to produce the most aromatic, rich coffee we use state of the art machinery.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-hourglass.svg" alt="icon" width="32" height="32">
+                <div class="cs-item-wrapper">
+                    <h3 class="cs-h3">
+                        Open 24/7, every day of the week
+                    </h3>
+                    <p class="cs-item-text">
+                        Just like how you rely on coffee, you can rely on us. We always aim to keep open so that we can deliver you that irresistable bevarage at all times.
+                </div>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/red-flower.svg" alt="icon" width="32" height="32">
+                <div class="cs-item-wrapper">
+                    <h3 class="cs-h3">
+                        100% Sustainable ingredients
+                    </h3>
+                    <p class="cs-item-text">
+                        We value the environment and its inhabitants, just like how we value you. We always use sustainable ingredients in our coffees and food items.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-1537">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Customer Reviews</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <p class="cs-review">
+                    Warm Atmosphere, Wonderful Coffee and Excellent service!. I come to JavaScript Cafe everyday and have never failed to see a smile from their wonderful staff.
+                    <!--SVG Background-->
+                    <svg class="cs-svg" id="Layer_2-1537-1537" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="none" viewBox="0 0 419.56 253.34"><defs><style>#reviews-1537 .cls-1{fill:var(--svgBG);stroke-width:0px;}#reviews-1537 .cls-2{fill:none;stroke:var(--svgBorder);stroke-width:8px;}</style></defs><g id="Layer_1-2-1537-1537"><path class="cls-1" d="m15.19,31.24C3.02,87.15-7.83,197.87,33.09,244.28c1.6,1.84,3.7,3.1,5.97,3.98s5.53,1.27,7.96,1c111.15-12.01,218.79-19.77,331.19-10.95,7.42.59,13.44-2.31,16.91-8.96,6.17-11.9,9.68-26.01,11.93-41.81,6.86-47.35,14.39-96.32-1.99-144.35-10.09-29.5-34.23-38.72-63.65-38.83-121.86-.35-220.38.52-295.39,2.99-18.98.63-26.52,4-30.83,23.89Z"/><path class="cls-2" d="m15.07,30.98C2.88,86.96-7.99,197.81,33,244.27c1.61,1.84,3.7,3.1,5.98,3.99s5.54,1.27,7.97,1c111.37-12.02,219.23-19.8,331.85-10.96,7.43.59,13.47-2.31,16.94-8.97,6.18-11.92,9.7-26.04,11.96-41.86,6.88-47.4,14.42-96.43-1.99-144.52-10.11-29.53-34.29-38.77-63.78-38.87-122.1-.35-220.82.52-295.97,2.99-19.01.63-26.57,4.01-30.89,23.92Z"/></g></svg>
+                </p>
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="images/reviewer1.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                    </picture>
+                    <span class="cs-name">
+                        Tavishana Woods
+                        <span class="cs-job">Loyal Customer</span>
+                    </span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <p class="cs-review">
+                    I come here often and the food is always top quality. I always leave with a smile on my face.
+                    <!--SVG Background-->
+                    <svg class="cs-svg" id="Layer_2-1537-1537"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 419.56 253.34"><defs><style>#reviews-1537 .cls-1{fill:var(--svgBG);stroke-width:0px;}#reviews-1537 .cls-2{fill:none;stroke:var(--svgBorder);stroke-width:8px;}</style></defs><g id="Layer_1-2-1537-1537"><path class="cls-1" d="m15.19,31.24C3.02,87.15-7.83,197.87,33.09,244.28c1.6,1.84,3.7,3.1,5.97,3.98s5.53,1.27,7.96,1c111.15-12.01,218.79-19.77,331.19-10.95,7.42.59,13.44-2.31,16.91-8.96,6.17-11.9,9.68-26.01,11.93-41.81,6.86-47.35,14.39-96.32-1.99-144.35-10.09-29.5-34.23-38.72-63.65-38.83-121.86-.35-220.38.52-295.39,2.99-18.98.63-26.52,4-30.83,23.89Z"/><path class="cls-2" d="m15.07,30.98C2.88,86.96-7.99,197.81,33,244.27c1.61,1.84,3.7,3.1,5.98,3.99s5.54,1.27,7.97,1c111.37-12.02,219.23-19.8,331.85-10.96,7.43.59,13.47-2.31,16.94-8.97,6.18-11.92,9.7-26.04,11.96-41.86,6.88-47.4,14.42-96.43-1.99-144.52-10.11-29.53-34.29-38.77-63.78-38.87-122.1-.35-220.82.52-295.97,2.99-19.01.63-26.57,4.01-30.89,23.92Z"/></g></svg>
+                </p>
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="images/reviwer2.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                    </picture>
+                    <span class="cs-name">
+                        Tyronerson Brandy
+                        <span class="cs-job">Loyal Customer</span>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>           
+
+<!-- ============================================ -->
+<!--                Meet The Team                 -->
+<!-- ============================================ -->
+
+<section id="meet-team-977">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Meet our bari-STARS</h2>
+            <p class="cs-text">
+                As a family run business we work together to make the best coffee and meals for our customers. Our wonderful crew help make this possible.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="images/barista1.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="images/barista1.jpg">
+                    <img loading="lazy" decoding="async" src="images/barista1.jpg" alt="stylist" width="320" height="400">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Tennushi Kallpugy </span>
+                    <span class="cs-job">Senior Barista</span>
+                    <div class="cs-social-group">
+                        <a href="" class="cs-link" aria-label="visit linkedin">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin-gold.svg" alt="linkedin" width="12" height="12">
+                        </a>
+                        <a href="" class="cs-link" aria-label="visit twitter">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-gold.svg" alt="twitter" width="12" height="12">
+                        </a>
+                        <a href="" class="cs-link" aria-label="visit instragram">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-gold.svg" alt="instragram" width="12" height="12">
+                        </a>
+                        <a href="" class="cs-link" aria-label="visit youtube">
+                            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-gold.svg" alt="youtube" width="12" height="12">
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="images/barista2.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="images/barista2.jpg">
+                    <img loading="lazy" decoding="async" src="images/barista2.jpg" alt="stylist" width="320" height="400">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Andrevius Jiffyson</span>
+                    <span class="cs-job">Junior Barista</span>
+                    <div class="cs-social-group">
+                        <a href="" class="cs-link" aria-label="visit linkedin">
+                            <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin-gold.svg" alt="linkedin" width="12" height="12">
+                        </a>
+                        <a href="" class="cs-link" aria-label="visit twitter">
+                            <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-gold.svg" alt="twitter" width="12" height="12">
+                        </a>
+                        <a href="" class="cs-link" aria-label="visit instragram">
+                            <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-gold.svg" alt="instragram" width="12" height="12">
+                        </a>
+                        <a href="" class="cs-link" aria-label="visit youtube">
+                            <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-gold.svg" alt="youtube" width="12" height="12">
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="images/barista3.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="images/barista3.jpg">
+                    <img loading="lazy" decoding="async" src="images/barista3.jpg" alt="stylist" width="320" height="400">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Kaidey Tackfy</span>
+                    <span class="cs-job">Junior Barista</span>
+                    <div class="cs-social-group">
+                        <a href="" class="cs-link" aria-label="visit linkedin">
+                            <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin-gold.svg" alt="linkedin" width="12" height="12">
+                        </a>
+                        <a href="" class="cs-link" aria-label="visit twitter">
+                            <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-gold.svg" alt="twitter" width="12" height="12">
+                        </a>
+                        <a href="" class="cs-link" aria-label="visit instragram">
+                            <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-gold.svg" alt="instragram" width="12" height="12">
+                        </a>
+                        <a href="" class="cs-link" aria-label="visit youtube">
+                            <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-gold.svg" alt="youtube" width="12" height="12">
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="images/barista4.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="images/barista4.jpg">
+                    <img loading="lazy" decoding="async" src="images/barista4.jpg" alt="stylist" width="320" height="400">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Aadivan Jecklson</span>
+                    <span class="cs-job">Senior Barista</span>
+                    <div class="cs-social-group">
+                        <a href="" class="cs-link" aria-label="visit linkedin">
+                            <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin-gold.svg" alt="linkedin" width="12" height="12">
+                        </a>
+                        <a href="" class="cs-link" aria-label="visit twitter">
+                            <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-gold.svg" alt="twitter" width="12" height="12">
+                        </a>
+                        <a href="" class="cs-link" aria-label="visit instragram">
+                            <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-gold.svg" alt="instragram" width="12" height="12">
+                        </a>
+                        <a href="" class="cs-link" aria-label="visit youtube">
+                            <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-gold.svg" alt="youtube" width="12" height="12">
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-1292">
+    <div class="cs-container">      
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="images/coffeeboxy.png" alt="logo" width="240" height="32">
+            </a>
+            <p class="cs-text">
+                Always bringing the best coffee to our customers!
+            </p>
+            <a href="mailto:info@mail.com" class="cs-link">
+                <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/construction-mail.svg" alt="icon" width="24" height="24">
+            JavaScriptCafe@cafe.com
+            </a>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Menu</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Breakfast</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Mains</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Desserts</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Beverages</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">About</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">About us</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Suppliers</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Team</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Careers</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Facebook</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Instagram</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">LinkedIn</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Help</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">FAQ</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Contact us</a>
+            </li>
+        </ul>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-copyright">Copyright© 2024. 
+            <a class="cs-copyright-link" href="">JavaScript Cafe</a>
+            All Right Reserved.
+        </span>
+        <a href="" class="cs-copyright-link">Terms of Service</a>
+        <a href="" class="cs-copyright-link">Privacy Policy</a>
+    </div>
+    <!--Floating Cirlces-->
+    <div class="cs-floater" aria-hidden="true"></div>
+</footer>                               
+</body>
+</html>                                
